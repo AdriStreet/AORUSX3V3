@@ -1,0 +1,52 @@
+BIOS SETUP FOR macOS on X3V3
+
+BIOS VERSION:
+
+EXE Version on Drivers Update: FB0A/F009 (OFFICIAL DRIVER, NOT LATEST)
+BIOS FW Version: FB0A
+EC FW Version: F009
+
+
+BIOS SETTINGS:
+
+Advanced:
+	3D Graphic Acceleration	[Enable]
+
+	Onboard Device Configuration:
+		Wireless Lan	[Enable]
+		Bluetooth	[Enable]
+		RTC Support	[Disable]
+		Webcam		[Enable]
+		Hyper-threading	[Enable]
+
+	USB Charging Function
+		Sleep Mode	[By Command & Control]
+		By Command...	[By Command & Control]
+
+	SATA Configuration
+		SATA Mode Selection	[AHCI]
+		Aggressive		[Disable]
+
+	USB Configuration
+		Legacy USB Support	[Enable]
+		XHCI Mode		[Enable]
+
+Boot:
+	Boot Option #1	[UEFI OS: ...]
+	OS Type		[Legacy OS]
+
+Security:
+	System Mode	[Setup]
+	Secure Boot	[Not Active]
+
+
+UEFI SHELL TO SET DVMT TO 64Mb
+
+UEFI Shell on a USB Stick
+--> ADD EFI FOLDER ! So that the / of the USB is "EFI/BOOT/BOOTX64.efi"
+--> Boot with UEFI Mode On, not Legacy !
+Variable: 0x30F
+
+Command: setup_var 0x30F 0x2
+--> 64Mb is enough for UHD
+To check: setup_var 0x30F
