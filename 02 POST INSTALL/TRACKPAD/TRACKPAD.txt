@@ -1,6 +1,0 @@
-1) Replace Trackpad.prefPane in S/L/PreferencePane
-	-> Terminal -> sudo mount -uw / -> cp -R Trackpad.Prefpane [WITHOUT "/"] /S/L/PreferencePane
-
-2) To swipe with 3 fingers
-	-> Go to Settings -> Keyboard -> Shortcut -> Mission Control
-	-> Click on Space gauche / Left and do the 3 fingers swipe

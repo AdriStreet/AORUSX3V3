@@ -1,5 +1,0 @@
-## NOT A PATCH ##
-
-READ CARREFULY THE PATCH
-	-> B1FC CAN'T BE CHANGED EVERYWHERE ON DSDT
-	-> In MaciASL, search for B1FC and manually replace it by (B1B2(B1FX,B1FY)
